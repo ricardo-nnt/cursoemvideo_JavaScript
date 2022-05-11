@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex003</title>
+    <style>
+        body{
+
+            background-color: black;
+            color: white; 
+            font: normal 20pt Arial;
+        }
+
+       
+
+    </style>
+</head>
+<body>
+
+    <h1>Olá Mundo!</h1> 
+    
+
+    <script>
+
+        //O window.prompt retorna uma string, mesmo inserindo um número como valor
+        //Para realizar uma conversão de string para number -- Number.parseInt(n) ou Number.parseFloat(n) ou Number(n) --
+        var n1 = Number.parseFloat(window.prompt('Insira um número:')) 
+        var n2 = Number.parseFloat(window.prompt('Insira outro número:'))
+        var n3 = Number(window.prompt('Insira mais um número:'))
+        var s = n1 + n2 + n3//Logo a soma retorna uma srtring
+
+        window.alert(`A soma dos valores ${n1}, ${n2} e ${n3} é ${s}`) //Utilizando a técnica de Template String
+
+        //(number + number) para adição
+        //(string + string) para concatenação
+
+
+        //Para conversão de number para string
+        // String(n) ou n.String()
+
+
+        //Template String
+        var nome = 'Ricardo'
+        var idade = 21
+        var curso = 'JavaScript'
+        `O aluno ${nome} com ${idade} anos está aprendendo ${curso}`
+        
+        //s.length - quantos caracteres tem uma string
+        //s.toUpperCase() - tudo para 'MAIÚSCULA'
+        //s.toLowerCase() - tudo para 'minúscula'
+
+     </script>
+</body>
+</html>
